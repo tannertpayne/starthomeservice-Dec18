@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starthomeservice.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-bg {
+            background-color: rgba(59, 107, 59, 0.8) !important;
+            backdrop-filter: blur(10px);
+        }
+        body {
+            background-color: #FFFAFB;
+        }
+        th, td {
+            background-color: #FFFAFB !important;
+            color: #013120 !important;
+        }
+        .hover-effect {
+            background-color: white !important;
+            border: 1px solid #5B8C5A !important;
+        }
+        .hover-border-effect {
+            border: 1px solid #5B8C5A !important;
+        }
+        #mobile-nav-buttons {
+                display: none;
+            }
+            #desktop-navbar {
+                display: block;
+                position: sticky;
+            }
+        @media (max-width: 768px) {
+            #mobile-nav-buttons {
+                display: block;
+            }
+            #desktop-navbar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <section id="mobile-nav-buttons" class="sticky-top">
+    <nav class="navbar p-3 justify-content-end sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between" style="width: 100%; padding: 0 1px;">
+                <!-- Left-aligned Logo -->
+                <a href="/" class="d-flex p-3 rounded-3 custom-bg shadow-sm text-white text-decoration-none justify-content-center align-items-center" style="height: 60px; width: 60px;">
+                    <img src="./bca12198-e032-4bed-8f30-644a7a956069.png" height="30px" alt="START">
+                </a>
+            
+                <!-- Right-aligned Button -->
+                <button class="custom-bg p-3 rounded-3 shadow-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none; height: 60px; width: 60px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="28px" height="29px" fill-rule="nonzero">
+                        <g fill="#fffafb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            
+            
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #FFFAFB;">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="margin-top: 2%; margin-right: 4%;"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end align-items-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Offer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="pt-2">
+                    <button class="btn btn-warning" type="submit" style="color: #013120;">Search</button>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+   
+    <section id="desktop-navbar" class="sticky-top">
+        <header class="p-3 text-white sticky-top" style="background-color: #FFFAFB 0%;">
+            <div class="container custom-bg p-3 px-5 rounded-pill shadow-lg">
+                <div class="d-flex flex-wrap align-items-center justify-content-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-md-0 text-white text-decoration-none">
+                        <img src="./bca12198-e032-4bed-8f30-644a7a956069.png" height="36px" alt="START">
+                    </a>
+                    <ul class="nav col-12 col-md-auto me-md-auto mb-2 justify-content-center mb-md-0" style="margin-left: 2%;">
+                        <li><a href="#" class="nav-link px-2 text-white">Why?</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">How?</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Offer</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                    </ul>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-warning" style="color: #013120;">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </header>        
+</section>
+
+    <section id="hero" style="margin-top: 2%;">
+        <div class="px-4 py-5 my-3 text-center">
+            <div class="row justify-content-center">
+                <h1 class="display-5 fw-bold text-center col-12 col-sm-8" style="color: #013120;">DO YOU WANT TO EARN YOUR FIRST $100K?</h1>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4" style="color: #013120;">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3">Learn More</button>
+                    <button type="button" class="btn btn-warning btn-lg px-4" style="color: #013120;">I want to make $100k!</button>
+                </div>
+                <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center rounded-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item d-flex gap-3 py-2 border-0 shadow-sm" aria-current="true" style="background-color: white; transition: background-color 0.3s, border 0.01s;" 
+                           onmouseover="this.classList.add('hover-effect')" 
+                           onmouseout="this.classList.remove('hover-effect')">
+                            <img src="./IMG_9019 2.jpeg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                            <div class="d-flex gap-2 w-100 justify-content-start">
+                                <div>
+                                    <p class="mb-0 opacity-75 text-start text-dark">"I sold my first $80,000 in only 8 months..." <br><span class="text-decoration-underline">(Click to read more)</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4 mb-4 mb-md-0">
+                    <div class="p-4 border bg-danger rounded-3 bg-opacity-10 shadow-sm">
+                        <h3 style="color: #660000;">Before your business...</h3>
+                        <p style="color: #330000;">This is the first reason why you should choose us.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4">
+                    <div class="p-4 border bg-success rounded-3 bg-opacity-25 shadow-sm">
+                        <h3 style="color: #013120;">After your business...</h3>
+                        <p style="color: #012015;">This is the second reason why you should choose us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="options">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom" style="color: #013120;">Custom cards</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg" style="background-image: url('pexels-ninobur-14613134.jpg'); background-size: cover; border-color: #ebe6e7; background-position: -50% 90%;" 
+                         onmouseover="this.classList.add('hover-border-effect')" 
+                         onmouseout="this.classList.remove('hover-border-effect')">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center">
+                                    <a href="#" class="text-white"><small>Read more</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg" style="background-image: url('2.png'); background-size: cover; border-color: #ebe6e7; background-position: -50% 30%" 
+                         onmouseover="this.classList.add('hover-border-effect')" 
+                         onmouseout="this.classList.remove('hover-border-effect')">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center">
+                                    <a href="#" class="text-white"><small>Read more</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg" style="background-image: url('pexels-caitlin-whealy-3517316-5652626.jpg'); background-size:cover; border-color: #ebe6e7; background-position: -50% 50%" 
+                         onmouseover="this.classList.add('hover-border-effect')" 
+                         onmouseout="this.classList.remove('hover-border-effect')">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center">
+                                    <a href="#" class="text-white"><small>Read more</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="sales">
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom" style="color: #013120;">Icon grid</h2>
+        
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4" style="color: #013120;">Featured title</h3>
+                  <p style="color: #013120;">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4" style="color: #013120;">Featured title</h3>
+                  <p style="color: #013120;">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4" style="color: #013120;">Featured title</h3>
+                  <p style="color: #013120;">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4" style="color: #013120;">Featured title</h3>
+                  <p style="color: #013120;">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="pricing">
+        <main class="py-5 container">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h2 class="display-4 fw-normal" style="color: #013120;">Pricing</h2>
+                <p class="fs-5" style="color: #013120;">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal" style="color: #013120;">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title" style="color: #013120;">$0<small class="text-body-secondary fw-light">/mo</small></h2>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li style="color: #013120;">10 users included</li>
+                                <li style="color: #013120;">2 GB of storage</li>
+                                <li style="color: #013120;">Email support</li>
+                                <li style="color: #013120;">Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-lg" style="border-color: #5B8C5A;">
+                        <div class="card-header py-3" style="background-color: #5B8C5A;">
+                            <h4 class="my-0 fw-bold text-light">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title" style="color: #013120;">$15<small class="text-body-secondary fw-light">/mo</small></h2>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li style="color: #013120;">20 users included</li>
+                                <li style="color: #013120;">10 GB of storage</li>
+                                <li style="color: #013120;">Priority email support</li>
+                                <li style="color: #013120;">Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-warning" style="color: #013120;">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal" style="color: #013120;">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title" style="color: #013120;">$29<small class="text-body-secondary fw-light">/mo</small></h2>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li style="color: #013120;">30 users included</li>
+                                <li style="color: #013120;">15 GB of storage</li>
+                                <li style="color: #013120;">Phone and email support</li>
+                                <li style="color: #013120;">Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg hover-shadow" style="background-color: #5B8C5A; color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#496D48'" onmouseout="this.style.backgroundColor='#5B8C5A'">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="display-6 text-center mb-4" style="color: #013120;">Compare plans</h3>
+
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Free</th>
+                            <th style="width: 22%;">Pro</th>
+                            <th style="width: 22%;">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Public</th>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Private</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Permissions</th>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Sharing</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Unlimited members</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </section>
+
+    <section id="about">
+        <div class="container my-5">
+            <div class="p-5 text-center rounded-3 shadow-lg" style="background-color: white;">
+              <h2 style="color: #013120;">Basic jumbotron</h2>
+              <img src="./Screenshot 2024-12-15 at 4.37.28 PM.png" alt="Headshot" class="rounded-circle mb-4" style="width: 120px; height: 120px; margin-top: 5%;">
+              <h4 style="color: #013120;">Tanner</h4>
+              <p style="color: #013120;">
+                This is a simple Bootstrap jumbotron that sit recreated with built-in utility classes.
+              </p>
+              <button type="button" class="btn btn-warning" style="color: #013120;">Click me</button>
+            </div>
+          </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 style="color: #013120;">START</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Why?</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How?</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offer</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 style="color: #013120;">Articles</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About the Founder</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Testimonials</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">House Painting</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Landscaping</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pressure Washing</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-3 mb-3">
+                  <form>
+                    <h5 style="color: #013120;">Subscribe to us. </h5>
+                    <p style="color: #013120;">The only emails we send are 100% worth it.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-end">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-warning" type="button" style="color: #013120;">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p style="color: #013120;">© 2024. All rights reserved by <a href="starthomeservice.com" style="color: #013120;">starthomeservice.com</a>.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.linkedin.com/company/starthomeservice-com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 30 30" fill="#0B66C2">
+                                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/>
+                            </svg>
+                        </a>
+                    </li>               
+                 </ul>
+              </div>
+            </footer>
+          </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
